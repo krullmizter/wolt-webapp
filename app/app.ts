@@ -149,7 +149,7 @@ let finalJSON = {
     ]
 };
 
-server.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+server.listen(port, () => console.log(`Server running on http://localhost:${port}/discovery`));
 
 server.get('/discovery', (req, res) => {
     long = req.query.long as unknown as number;
